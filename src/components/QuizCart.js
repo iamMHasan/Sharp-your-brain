@@ -2,7 +2,7 @@ import React from 'react';
 
 const QuizCart = ({ quiz }) => {
     const { name, logo, total } = quiz
-    console.log(quiz);
+    // console.log(quiz);
     return (
         <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
             <img
@@ -17,8 +17,11 @@ const QuizCart = ({ quiz }) => {
                 </div>
                 <div>
                     <p className="text-sm font-medium tracking-wide text-white">
-                        {total}
+                      Total Q: {total}
                     </p>
+                </div>
+                <div>
+                    <button className='bg-yellow-300 hover:bg-yellow-200 px-2 rounded'>Start Quiz</button>
                 </div>
                
             </div>
