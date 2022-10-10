@@ -1,8 +1,9 @@
+import image from '../img/quiz_header.jpg'
 export const HeaderBanner = () => {
     return (
       <div className="relative">
         <img
-          src="https://images.pexels.com/photos/3747463/pexels-photo-3747463.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+          src={image}
           className="absolute inset-0 object-cover w-full h-full"
           alt=""
         />
@@ -14,24 +15,9 @@ export const HeaderBanner = () => {
                 Faith is more than getting a theological quiz right.
                 </h2>
                 <p className="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudan, totam rem aperiam, eaque ipsa
-                  quae.
+                I want to have my own quiz show. I want to do a Saturday night, wear a suit and do one of those shiny floor shows.
+
                 </p>
-                <a
-                  href="/"
-                  aria-label=""
-                  className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700"
-                >
-                  Learn more
-                  <svg
-                    className="inline-block w-3 ml-2"
-                    fill="currentColor"
-                    viewBox="0 0 12 12"
-                  >
-                    <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-                  </svg>
-                </a>
               </div>
             </div>
           </div>
