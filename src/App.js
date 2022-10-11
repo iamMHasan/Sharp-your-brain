@@ -8,6 +8,7 @@ import Statistics from './components/Statistics';
 import Quizplay from './components/Quizplay';
 import ErrorPage from './components/ErrorPage';
 import { ToastContainer } from 'react-toastify';
+import Blog from './Root/Blog';
 
 function App() {
   const router = createBrowserRouter([
@@ -43,7 +44,11 @@ function App() {
             return fetch('https://openapi.programming-hero.com/api/quiz')
           },
           element: <Statistics></Statistics>
-        }
+        },
+        {
+          path: '/blog',
+          element: <Blog></Blog>
+        },
       ]
     }
   ])
