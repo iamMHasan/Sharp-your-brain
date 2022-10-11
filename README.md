@@ -1,4 +1,4 @@
-Live site : 
+Live site : https://63457fc443153a1eae8f2e69--stirring-boba-12ce8c.netlify.app/
 
 Project Features : 
     1. You can play quiz in some tecnology field.

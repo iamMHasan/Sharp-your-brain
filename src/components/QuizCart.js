@@ -23,7 +23,7 @@ const QuizCart = ({ quiz }) => {
                 </div>
                 <div>
                     <Link to={`/quiz/${id}`}>
-                        <button className='bg-yellow-300 sm:text-[5px] hover:bg-yellow-200  px-2 rounded'>Start Quiz</button>
+                        <button className='bg-yellow-300 hover:bg-yellow-200  px-4 rounded'>Start Quiz</button>
                     </Link>
                 </div>
 
