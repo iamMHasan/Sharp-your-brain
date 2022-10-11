@@ -10,8 +10,9 @@ const Quizplay = () => {
     // console.log(questions)
     return (
         <div className='text-center w-9/12 mx-auto'>
-           <h2 className='text-2xl text-center font-bold my-4'>Start the quiz of {name}</h2>
-           <div className="grid grid-cols-2 gap-4 bg-slate-300 ">
+           <h2 className='text-4xl text-center font-bold my-8'>Start the quiz of <span className='text-[#8147fd] text-5xl'> 
+           {name}</span></h2>
+           <div className="grid grid-cols-2 gap-4 p-3 bg-[#fde047] ">
                 {
                     questions.map(question => <Quiz key={question.id} question={question}></Quiz>)
                 }

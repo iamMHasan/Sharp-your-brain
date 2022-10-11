@@ -2,7 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Swal from 'sweetalert2'
 
 const Quiz = ({ question }) => {
     const { question: ques } = question
@@ -49,7 +48,7 @@ const Quiz = ({ question }) => {
                         <button
                             key={index}
                             onClick={() => { handleQuiz(quiz) }}
-                            className='bg-slate-200 hover:bg-slate-300 m-3 p-3 rounded text-bold'>
+                            className='bg-[#ffe3df] hover:bg-[#8147fd51] m-3 p-3 rounded text-bold'>
                             {quiz}
                         </button>
                     </ul>
