@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const QuizCart = ({ quiz }) => {
-    const { name, logo, total } = quiz
+    const { name, logo, total ,id} = quiz
     // console.log(quiz);
     return (
         <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
@@ -17,13 +18,15 @@ const QuizCart = ({ quiz }) => {
                 </div>
                 <div>
                     <p className="text-sm font-medium tracking-wide text-white">
-                      Total Q: {total}
+                        Total Q: {total}
                     </p>
                 </div>
                 <div>
-                    <button className='bg-yellow-300 hover:bg-yellow-200 px-2 rounded'>Start Quiz</button>
+                    <Link to={`/quiz/${id}`}>
+                        <button className='bg-yellow-300 hover:bg-yellow-200 px-2 rounded'>Start Quiz</button>
+                    </Link>
                 </div>
-               
+
             </div>
         </div>
     );

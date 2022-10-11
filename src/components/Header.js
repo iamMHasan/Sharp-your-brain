@@ -46,7 +46,7 @@ import { Link } from "react-router-dom";
             </li>
             <li>
               <Link
-                to="/"
+                to="/Statistics"
                 aria-label="About us"
                 title="About us"
                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -148,7 +148,7 @@ import { Link } from "react-router-dom";
                       </li>
                       <li>
                         <Link
-                          to="/"
+                          to="/Statistics"
                           aria-label="About us"
                           title="About us"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
