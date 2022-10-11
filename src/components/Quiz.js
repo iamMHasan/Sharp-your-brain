@@ -1,16 +1,16 @@
 import React from 'react';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import Swal from 'sweetalert2'
 
 const Quiz = ({ question }) => {
     const { question: ques } = question
     console.log(question);
+
     const handleQuiz = correctAns => {
-        console.log(correctAns);
         if (correctAns === question.correctAnswer) {
-           toast.success('correct answer')
-           alert('correct answer')
-        } else{
-            alert('wrong answer')
+            toast.success('correct answer', { autoClose: 500, position: "top-center", theme: "dark", })
+        } else {
+            toast.error('wrong answer', { autoClose: 500, position: "top-center", theme: "dark", })
         }
 
 
@@ -21,15 +21,17 @@ const Quiz = ({ question }) => {
             {
                 question.options.map((quiz, index) => (
 
-                    <button
-                        key={index}
-                        // onClick={handleQuiz}
-                        onClick={() => { handleQuiz(quiz) }}
-                        className='bg-slate-200 hover:bg-slate-300 m-3 p-3 rounded text-bold'>
-                        {quiz}
-                    </button>
+                    <ul className='grid '>
+                        <button
+                            key={index}
+                            onClick={() => { handleQuiz(quiz) }}
+                            className='bg-slate-200 hover:bg-slate-300 m-3 p-3 rounded text-bold'>
+                            {quiz}
+                        </button>
+                    </ul>
                 ))
             }
+            <ToastContainer />
         </div>
     );
 };
